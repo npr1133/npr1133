@@ -1,0 +1,146 @@
+body {
+    background-image: url("images/TAIWAN11.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 1rem;
+    background: rgb(33, 33, 193);
+    box-shadow: 2px 0 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: block;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.nav-login {
+    margin-top: auto;
+}
+
+.content-wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.place-description {
+    background: rgba(45, 55, 72, 0.75); 
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 30px 40px; 
+    border-radius: 20px;
+    width: 100%; 
+    line-height: 1.8;
+    font-size: 1.15rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.place-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.place-card {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    border-radius: 16px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.place-card p {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+
+.place-card a {
+    color: gold;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar br {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 10px;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin-bottom: 0;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-login {
+        margin-top: 0;
+    }
+
+    .content-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+    }
+
+    .place-description {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .place-card {
+        padding: 15px;
+    }
+
+    .place-card p {
+        font-size: 16px;
+    }
+
+    .place-card a {
+        font-size: 20px;
+    }
+}
+

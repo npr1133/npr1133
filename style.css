@@ -1,0 +1,196 @@
+body {
+    background-image: url("images/TAIWAN11.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 1rem;
+    background: rgb(33, 33, 193);
+    box-shadow: 2px 0 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: block;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.nav-login {
+    margin-top: auto;
+}
+
+.content-wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.content-wrapper h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cities-container-card {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.content-wrapper img {
+    height: 500px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
+}
+
+.cities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0; 
+}
+
+.cities-list * {
+    margin-left: 0; 
+    margin-right: 0;
+}
+
+.cities-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    width: 200px;
+}
+
+.cities-card img {
+    border-radius: 15px;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+
+.comment-container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: 30px;
+}
+
+.comment-container textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.place-description {
+    background: rgba(45, 55, 72, 0.75); 
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 40px; 
+    border-radius: 20px;
+    width: 100%; 
+    line-height: 1.8;
+    font-size: 1.15rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    box-sizing: border-box;
+}
+
+.place-description h2 {
+    color: gold;
+    margin: 0 0 20px 0;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.place-description p {
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar br {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 10px;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin-bottom: 0;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-login {
+        margin-top: 0;
+    }
+
+    .content-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+    }
+
+    .content-wrapper h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .content-wrapper img {
+        max-width: 100%;
+        height: auto;
+    }
+}
